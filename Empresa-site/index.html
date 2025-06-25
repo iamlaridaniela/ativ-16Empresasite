@@ -8,8 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
  <style>
-  body {
+  body{
       padding-top: 70px; /* Para navbar fixa */
     }
     </style>
@@ -36,7 +37,7 @@
   <!-- Seção de Destaque -->
   <section id="destaque" class="bg-light py-5 text-center">
   <div class="container">
-    <img src="https://sdmntprcentralus.oaiusercontent.com/files/00000000-c7d4-61f5-9835-95614f7eb5ae/raw?se=2025-06-23T20%3A39%3A46Z&sp=r&sv=2024-08-04&sr=b&scid=7ec34401-855f-54e7-b5ee-446e597cee85&skoid=0da8417a-a4c3-4a19-9b05-b82cee9d8868&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-06-22T23%3A52%3A02Z&ske=2025-06-23T23%3A52%3A02Z&sks=b&skv=2024-08-04&sig=U0p0a65ig8Nt9IFDd641KSKYEj4h6MiDSQyE%2Bf/RSZY%3D" alt="LifeStyle" class="img-fluid rounded shadow mb-4" style="max-width: 600px;" />
+    <img src="imagem/7823fc65-3210-4060-b8d2-15fef18e2600.png"  class="img-fluid rounded shadow mb-4" style="max-width: 600px;" />
     <h1 class="display-5 fw-bold">Sobre a empresa</h1>
     <p class="lead mb-4">
       A nossa empresa LifeStyle é dedicada a entregar um resultado tecnológico baseado no estilo de vida livre do cliente, como saúde e cuidados pessoais, dentre outros, a partir da tecnologia.
@@ -103,32 +104,43 @@
       </div>
     </div>
   </section>
- <!-- Formulário de Contato -->
-  <section id="contato" class="bg-light py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Fale Conosco</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6">
-          <form>
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome</label>
-              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail</label>
-              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required />
-            </div>
-            <div class="mb-3">
-              <label for="mensagem" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-              <i class="bi bi-send-fill me-2"></i>Enviar Mensagem
-            </button>
-          </form>
+    <form class="formulário">
+        <h2 class="formulário-Titulo">Cadastro</h2>
+
+        <label for="Nome">Nome Completo</label>
+        <input type="text" class="campo" placeholder="Digite seu nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" class="campo" placeholder="exemplo@gmail.com" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" class="campo" placeholder="Digite" required/>
+
+        <label> Data de nascimento</label>
+        <input type="date" class="campo" required/>
+
+        <label>Você aceita os termos ?</label>
+        <div class="Radio-group">
+            <input type="Radio" id="aceito" name="termos" value="sim">
+            <label for="aceito">sim</label>
+            <input type="Radio" id="aceito" name="termos" value="Não">
+            <label for="não aceito">Não</label>
         </div>
-      </div>
-    </div>
+
+        <label for="origem">como você conheceu o site ? </label>
+        <select id="origem" class="campo">
+            <option value="">selecione</option>
+            <option value="instagram">instagram</option>
+            <option value="facebook">facebook</option>
+            <option value="linkedin">linkedin</option>
+
+            </select>
+
+            <button type="submit" class="botão">Cadastrar</button>
+
+        
+    </form>
+</body>
   </section>
    <!-- Rodapé -->
   <footer class="bg-primary text-white py-4">
